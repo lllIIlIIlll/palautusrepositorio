@@ -33,14 +33,7 @@ class TennisGame:
             return "Win for player2"
 
     def count_score(self):
-        result = self.count_player_score(1)
-        return result + self.count_player_score(2)
-
-    def count_player_score(self, player):
-        if player == 1:
-            return self.score_counter(self.m_score1) + "-"
-        else:
-            return self.score_counter(self.m_score2)
+            return self.score_counter(self.m_score1) + "-" + self.score_counter(self.m_score2)
 
     def score_counter(self, score):
         if score == 0:
